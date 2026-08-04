@@ -1,0 +1,19 @@
+Sentence A: How do I reset my password?
+Sentence B: What's the process to change my password?
+Similarity Score: 0.8876
+
+Sentence A: How do I reset my password?
+Sentence B: How many vacation days do I get?
+Similarity Score: 0.5115
+
+Sentence A: The meeting is at 3 PM tomorrow.
+Sentence B: Tomorrow's meeting starts at 15:00.
+Similarity Score: 0.8944
+
+Sentence A: The meeting is at 3 PM tomorrow.
+Sentence B: I like pizza with extra cheese.
+Similarity Score: 0.4685
+
+Sentence A: كم عدد أيام الإجازة السنوية؟
+Sentence B: How many annual leave days are there?
+Similarity Score: 0.8684

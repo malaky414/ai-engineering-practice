@@ -1,0 +1,444 @@
+[
+  {
+    "id": 1,
+    "text": "the program crashes when I open the report page, I need a fix immediately!",
+    "expected": {
+      "category": "Tech Support",
+      "urgency": "High"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Tech Support\",\n  \"urgency\": \"High\"\n}",
+        "parsed": {
+          "category": "Tech Support",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.87
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Tech Support\", \"urgency\": \"High\"}",
+        "parsed": {
+          "category": "Tech Support",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.14
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is experiencing a critical issue with the program crashing when opening the report page. They require an immediate fix, indicating a high level of urgency.\",\n  \"category\": \"Tech Support\",\n  \"urgency\": \"High\"\n}\n```\n\nHere's the step-by-step analysis:\n\n1. **Identify the main intention/issue**: The customer is experiencing a program crash when opening the report page. This indicates a technical issue that needs to be resolved.\n\n2. **Determine how critical/time-sensitive it is**: The customer explicitly states that they need a fix \"immediately,\" which suggests a high level of urgency. This is not a routine or minor issue, but rather a critical one that requires prompt attention.\n\n3. **Map to the appropriate category and urgency level**: Based on the analysis, the issue falls under the \"Tech Support\" category, as it involves a technical problem with the program. The high level of urgency is reflected in the \"High\" urgency level.",
+        "parsed": {},
+        "is_valid_json": false,
+        "category_correct": false,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.39
+      }
+    }
+  },
+  {
+    "id": 2,
+    "text": "what are your subscription prices for the new year?",
+    "expected": {
+      "category": "Sales",
+      "urgency": "Low"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Sales\",\n  \"urgency\": \"Low\"\n}",
+        "parsed": {
+          "category": "Sales",
+          "urgency": "Low"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.18
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Billing\", \"urgency\": \"Medium\"}",
+        "parsed": {
+          "category": "Billing",
+          "urgency": "Medium"
+        },
+        "is_valid_json": true,
+        "category_correct": false,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.15
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is inquiring about subscription prices, which is a sales-related question. The urgency level is low as there is no mention of a deadline or time-sensitive requirement.\",\n  \"category\": \"Sales\",\n  \"urgency\": \"Low\"\n}\n```",
+        "parsed": {
+          "reasoning": "The customer is inquiring about subscription prices, which is a sales-related question. The urgency level is low as there is no mention of a deadline or time-sensitive requirement.",
+          "category": "Sales",
+          "urgency": "Low"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.23
+      }
+    }
+  },
+  {
+    "id": 3,
+    "text": "the app is excellent and runs smoothly, thank you!",
+    "expected": {
+      "category": "Feedback",
+      "urgency": "Low"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Feedback\",\n  \"urgency\": \"Low\"\n}",
+        "parsed": {
+          "category": "Feedback",
+          "urgency": "Low"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.12
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Feedback\", \"urgency\": \"Low\"}",
+        "parsed": {
+          "category": "Feedback",
+          "urgency": "Low"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.13
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is expressing gratitude and satisfaction with the app's performance, indicating no issue or problem.\",\n  \"category\": \"Feedback\",\n  \"urgency\": \"Low\"\n}\n```\n\nExplanation:\n\n1. **Identify the main intention/issue**: The customer is expressing gratitude and satisfaction with the app's performance, indicating no issue or problem.\n2. **Determine how critical/time-sensitive it is**: Since there is no issue or problem, the customer's feedback is not critical or time-sensitive.\n3. **Map to the appropriate category and urgency level**: Based on the customer's feedback, the category is \"Feedback\" and the urgency level is \"Low\".",
+        "parsed": {},
+        "is_valid_json": false,
+        "category_correct": false,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.32
+      }
+    }
+  },
+  {
+    "id": 4,
+    "text": "the invoice has a discount that we didn't agree upon with sales, and I need it adjusted before I pay.",
+    "expected": {
+      "category": "Billing",
+      "urgency": "High"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": \"High\"\n}",
+        "parsed": {
+          "category": "Billing",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.12
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Billing\", \"urgency\": \"High\"}",
+        "parsed": {
+          "category": "Billing",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.14
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is disputing an invoice discount and requires it to be adjusted before making a payment, indicating a billing issue that needs to be resolved promptly.\",\n  \"category\": \"Billing\",\n  \"urgency\": \"High\"\n}\n```\n\nHere's the step-by-step analysis:\n\n1. **Identify the main intention/issue**: The customer is disputing an invoice discount and wants it adjusted before making a payment.\n\n2. **Determine how critical/time-sensitive it is**: The customer needs the issue resolved before making a payment, which implies a time-sensitive situation. If the payment is not made, it could lead to delayed services or penalties, making it a high-urgency issue.\n\n3. **Map to the appropriate category and urgency level**: Based on the analysis, the issue falls under the **Billing** category, as it involves a dispute with an invoice. The urgency level is **High**, as the customer needs the issue resolved before making a payment.",
+        "parsed": {},
+        "is_valid_json": false,
+        "category_correct": false,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.54
+      }
+    }
+  },
+  {
+    "id": 5,
+    "text": "I don't know how to change my password, and I've been trying since morning with no email received.",
+    "expected": {
+      "category": "Tech Support",
+      "urgency": "Medium"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Tech Support\",\n  \"urgency\": \"High\"\n}",
+        "parsed": {
+          "category": "Tech Support",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.13
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Tech Support\", \"urgency\": \"High\"}",
+        "parsed": {
+          "category": "Tech Support",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.25
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is unable to change their password and has been trying since morning, indicating a time-sensitive issue. This is a technical issue that requires immediate assistance.\",\n  \"category\": \"Tech Support\",\n  \"urgency\": \"High\"\n}\n```\n\nHere's the step-by-step analysis:\n\n1. **Identify the main intention/issue**: The customer is unable to change their password.\n2. **Determine how critical/time-sensitive it is**: The customer has been trying since morning, which indicates a time-sensitive issue. They are unable to perform a basic action (changing their password) and are experiencing frustration due to the lack of email confirmation.\n3. **Map to the appropriate category and urgency level**: Based on the analysis, the issue falls under **Tech Support** (as it's a technical issue) and has a **High** urgency level (due to the time-sensitive nature and potential frustration).",
+        "parsed": {},
+        "is_valid_json": false,
+        "category_correct": false,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.45
+      }
+    }
+  },
+  {
+    "id": 6,
+    "text": "I would like to export the files as a PDF.",
+    "expected": {
+      "category": "Feedback",
+      "urgency": "Low"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Tech Support\",\n  \"urgency\": \"Low\"\n}",
+        "parsed": {
+          "category": "Tech Support",
+          "urgency": "Low"
+        },
+        "is_valid_json": true,
+        "category_correct": false,
+        "urgency_correct": true,
+        "exact_match": false,
+        "latency_seconds": 0.16
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Tech Support\", \"urgency\": \"Medium\"}",
+        "parsed": {
+          "category": "Tech Support",
+          "urgency": "Medium"
+        },
+        "is_valid_json": true,
+        "category_correct": false,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.19
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is requesting a feature to export files as a PDF, which is related to the functionality of the product. This is not a critical issue, but rather a feature request. Therefore, it is classified as a Sales query with Low urgency.\",\n  \"category\": \"Sales\",\n  \"urgency\": \"Low\"\n}\n```",
+        "parsed": {
+          "reasoning": "The customer is requesting a feature to export files as a PDF, which is related to the functionality of the product. This is not a critical issue, but rather a feature request. Therefore, it is classified as a Sales query with Low urgency.",
+          "category": "Sales",
+          "urgency": "Low"
+        },
+        "is_valid_json": true,
+        "category_correct": false,
+        "urgency_correct": true,
+        "exact_match": false,
+        "latency_seconds": 0.26
+      }
+    }
+  },
+  {
+    "id": 7,
+    "text": "The amount was withdrawn from the bank account twice for the same service!",
+    "expected": {
+      "category": "Billing",
+      "urgency": "High"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": \"High\"\n}",
+        "parsed": {
+          "category": "Billing",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.13
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Billing\", \"urgency\": \"High\"}",
+        "parsed": {
+          "category": "Billing",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.13
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is reporting a duplicate transaction, which is a billing issue. The urgency is high because the customer's bank account has been affected, and they may be at risk of overdraft or other financial consequences.\",\n  \"category\": \"Billing\",\n  \"urgency\": \"High\"\n}\n```\n\nHere's the step-by-step analysis:\n\n1. **Identify the main intention/issue**: The customer is reporting a duplicate transaction, which is a billing issue.\n2. **Determine how critical/time-sensitive it is**: The customer's bank account has been affected, and they may be at risk of overdraft or other financial consequences. This is a critical issue that requires immediate attention.\n3. **Map to the appropriate category and urgency level**: Based on the analysis, the category is **Billing** and the urgency is **High**.",
+        "parsed": {},
+        "is_valid_json": false,
+        "category_correct": false,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.35
+      }
+    }
+  },
+  {
+    "id": 8,
+    "text": "There is a slight slowdown when I upload large files, but overall it works fine.",
+    "expected": {
+      "category": "Tech Support",
+      "urgency": "Low"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Tech Support\",\n  \"urgency\": \"Low\"\n}",
+        "parsed": {
+          "category": "Tech Support",
+          "urgency": "Low"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.14
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Tech Support\", \"urgency\": \"Medium\"}",
+        "parsed": {
+          "category": "Tech Support",
+          "urgency": "Medium"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.18
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is experiencing a performance issue with uploading large files, but it's not completely broken. This suggests a technical problem that needs to be addressed, but it's not critical.\",\n  \"category\": \"Tech Support\",\n  \"urgency\": \"Medium\"\n}\n```\n\nHere's the step-by-step analysis:\n\n1. **Identify the main intention/issue**: The customer is experiencing a slowdown when uploading large files, but it's not completely broken.\n\n2. **Determine how critical/time-sensitive it is**: The issue is not critical, as the system is still working, but it's not ideal. The customer is experiencing a performance issue, which might impact their productivity, but it's not a complete failure.\n\n3. **Map to the appropriate category and urgency level**: Based on the analysis, the issue falls under **Tech Support** (as it's a technical problem) and has a **Medium** urgency level (as it's not critical, but still needs to be addressed).",
+        "parsed": {},
+        "is_valid_json": false,
+        "category_correct": false,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.52
+      }
+    }
+  },
+  {
+    "id": 9,
+    "text": "I need to cancel my account and get a refund if the technical issue isn't resolved.",
+    "expected": {
+      "category": "Billing",
+      "urgency": "High"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Billing\",\n  \"urgency\": \"High\"\n}",
+        "parsed": {
+          "category": "Billing",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.17
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Billing\", \"urgency\": \"High\"}",
+        "parsed": {
+          "category": "Billing",
+          "urgency": "High"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.13
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is requesting to cancel their account and receive a refund due to an unresolved technical issue, indicating a high level of urgency and a billing issue.\",\n  \"category\": \"Billing\",\n  \"urgency\": \"High\"\n}\n```\n\nHere's the step-by-step analysis:\n\n1. **Identify the main intention/issue**: The customer wants to cancel their account and get a refund. This indicates a billing issue, as it involves payment and account management.\n\n2. **Determine how critical/time-sensitive it is**: The customer mentions an unresolved technical issue, which suggests that the issue is critical and time-sensitive. They want to cancel their account and receive a refund, implying that they are unhappy with the current situation and want a resolution as soon as possible.\n\n3. **Map to the appropriate category and urgency level**: Based on the analysis, the category is **Billing** because it involves account management and payment. The urgency level is **High** because the customer is requesting a refund and wants to cancel their account due to an unresolved technical issue, indicating a high level of urgency.",
+        "parsed": {},
+        "is_valid_json": false,
+        "category_correct": false,
+        "urgency_correct": false,
+        "exact_match": false,
+        "latency_seconds": 0.49
+      }
+    }
+  },
+  {
+    "id": 10,
+    "text": "Can someone from the corporate department contact me for a new project?",
+    "expected": {
+      "category": "Sales",
+      "urgency": "Medium"
+    },
+    "styles": {
+      "Zero-Shot": {
+        "raw_output": "{\n  \"category\": \"Sales\",\n  \"urgency\": \"Medium\"\n}",
+        "parsed": {
+          "category": "Sales",
+          "urgency": "Medium"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.12
+      },
+      "Few-Shot": {
+        "raw_output": "{\"category\": \"Sales\", \"urgency\": \"Medium\"}",
+        "parsed": {
+          "category": "Sales",
+          "urgency": "Medium"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.16
+      },
+      "Chain-of-Thought": {
+        "raw_output": "```json\n{\n  \"reasoning\": \"The customer is requesting a new project, which implies a sales inquiry. The urgency is medium as it's a new project, but not necessarily time-sensitive.\",\n  \"category\": \"Sales\",\n  \"urgency\": \"Medium\"\n}\n```",
+        "parsed": {
+          "reasoning": "The customer is requesting a new project, which implies a sales inquiry. The urgency is medium as it's a new project, but not necessarily time-sensitive.",
+          "category": "Sales",
+          "urgency": "Medium"
+        },
+        "is_valid_json": true,
+        "category_correct": true,
+        "urgency_correct": true,
+        "exact_match": true,
+        "latency_seconds": 0.22
+      }
+    }
+  }
+]

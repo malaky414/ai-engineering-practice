@@ -1,0 +1,89 @@
+{
+  "sync_duration_seconds": 1.2695,
+  "async_duration_seconds": 0.3739,
+  "total_requests": 10,
+  "sync_sample_results": [
+    {
+      "city": "Cairo",
+      "temp": 35.2
+    },
+    {
+      "city": "London",
+      "temp": 22.6
+    },
+    {
+      "city": "New York",
+      "temp": 19.0
+    },
+    {
+      "city": "Tokyo",
+      "temp": 26.5
+    },
+    {
+      "city": "Paris",
+      "temp": 25.8
+    },
+    {
+      "city": "Sydney",
+      "temp": 10.9
+    },
+    {
+      "city": "Berlin",
+      "temp": 27.8
+    },
+    {
+      "city": "Dubai",
+      "temp": 42.7
+    },
+    {
+      "city": "Riyadh",
+      "temp": 44.9
+    },
+    {
+      "city": "Toronto",
+      "temp": 16.8
+    }
+  ],
+  "async_sample_results": [
+    {
+      "city": "Cairo",
+      "temp": 35.2
+    },
+    {
+      "city": "London",
+      "temp": 22.6
+    },
+    {
+      "city": "New York",
+      "temp": 19.0
+    },
+    {
+      "city": "Tokyo",
+      "temp": 26.5
+    },
+    {
+      "city": "Paris",
+      "temp": 25.8
+    },
+    {
+      "city": "Sydney",
+      "temp": 10.9
+    },
+    {
+      "city": "Berlin",
+      "temp": 27.8
+    },
+    {
+      "city": "Dubai",
+      "temp": 42.7
+    },
+    {
+      "city": "Riyadh",
+      "temp": 44.9
+    },
+    {
+      "city": "Toronto",
+      "temp": 16.8
+    }
+  ]
+}

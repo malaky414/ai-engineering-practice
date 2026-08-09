@@ -1,0 +1,16 @@
+{
+  "num_documents": 1000,
+  "embedding_dim": 384,
+  "num_queries": 50,
+  "top_k": 5,
+  "in_memory": {
+    "indexing_time_seconds": 0.0,
+    "query_time_seconds": 0.25769,
+    "avg_query_ms": 5.154
+  },
+  "chromadb": {
+    "indexing_time_seconds": 0.30303,
+    "query_time_seconds": 0.13298,
+    "avg_query_ms": 2.66
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "test_query": "Why is fixed-size chunking problematic for context?",
+  "results": {
+    "Fixed-Size": {
+      "num_chunks": 11,
+      "avg_chunk_length": 135.3,
+      "indexing_time_seconds": 198.54935,
+      "query_time_seconds": 0.52386,
+      "top_similarity_score": 0.6444,
+      "top_retrieved_chunk": "because Large Language Models (LLMs) have finite context windows and processing ..."
+    },
+    "Sentence-Based": {
+      "num_chunks": 11,
+      "avg_chunk_length": 107.9,
+      "indexing_time_seconds": 1.11695,
+      "query_time_seconds": 0.44126,
+      "top_similarity_score": 0.6167,
+      "top_retrieved_chunk": "Chunking is a critical step because Large Language Models (LLMs) have finite con..."
+    },
+    "Recursive-Character": {
+      "num_chunks": 11,
+      "avg_chunk_length": 107.9,
+      "indexing_time_seconds": 1.26217,
+      "query_time_seconds": 0.44118,
+      "top_similarity_score": 0.6167,
+      "top_retrieved_chunk": "Chunking is a critical step because Large Language Models (LLMs) have finite con..."
+    }
+  }
+}

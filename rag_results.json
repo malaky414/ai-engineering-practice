@@ -1,0 +1,15 @@
+{
+  "query": "What happens if an internal endpoint fails mTLS authentication three times?",
+  "retrieved_context": [
+    "Atlas Enterprise Infrastructure Deployment Guidelines (2026 Edition):\n1. Security Protocols: All production microservices must communicate using TLS 1.3 encryption. Internal endpoints without valid mTLS certificates will be terminated automatically by the ingress controller after 3 failed attempts.",
+    "3. Model Inference Timeouts: LLM API requests routed through the primary gateway have a hard timeout limit of 5.0 seconds. If a model exceeds this threshold, the request falls back to the local LLaMA-3.1-8B-Instant instance.",
+    "4. Data Retention: Customer query logs and conversation embeddings are retained for exactly 90 days in cold storage before automated permanent erasure."
+  ],
+  "direct_answer": "In mTLS (mutual Transport Layer Security) authentication, if an internal endpoint fails mTLS authentication three times, it typically depends on the specific implementation and configuration of the system. However, I can provide a general overview of common practices.\n\nIn many cases, after three failed authentication attempts, the system may:\n\n1. **Block the endpoint**: The system may block the endpoint from making further requests, either temporarily or permanently, depending on the configuration. This is to prevent potential security risks and prevent brute-force attacks.\n2. **Rate limit the endpoint**: The system may rate limit the endpoint, limiting the number of requests it can make within a certain time frame. This can help prevent abuse and reduce the risk of a denial-of-service (DoS) attack.\n3. **Log the event**: The system may log the failed authentication attempts, which can help with security monitoring and incident response.\n4. **Trigger an alert**: The system may trigger an alert or notification to the security team or administrators, indicating a potential security issue.\n5. **Implement additional security measures**: Depending on the system configuration, additional security measures may be implemented, such as IP blocking, firewall rules, or other security controls.\n\nIt's essential to note that the specific behavior after three failed authentication attempts can vary depending on the system, its configuration, and the implementation of mTLS authentication. The exact behavior may be defined in the system's documentation, configuration files, or security policies.\n\nTo provide a more accurate answer, I would need to know the specific system, its configuration, and the implementation of mTLS authentication. If you have more information about the system, I can try to provide a more detailed answer.",
+  "rag_answer": "Internal endpoints without valid mTLS certificates will be terminated automatically by the ingress controller after 3 failed attempts.",
+  "metrics": {
+    "retrieval_latency_sec": 0.4851,
+    "direct_gen_latency_sec": 0.9681,
+    "rag_gen_latency_sec": 0.178
+  }
+}

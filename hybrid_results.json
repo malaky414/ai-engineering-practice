@@ -1,0 +1,65 @@
+{
+  "query": "What does error code ERR-904 mean in Atlas Service Policy?",
+  "documents": [
+    "Atlas Service Policy: Error code ERR-904 indicates database connection timeout.",
+    "Atlas Service Policy: Error code ERR-905 indicates unauthorized access token.",
+    "System Architecture: All microservices communicate using mTLS encryption protocol.",
+    "Deployment Spec: The maximum RAM allocated per vector database node is 16GB.",
+    "Security Protocol: Incident response team can be reached at extension 4099."
+  ],
+  "sparse_bm25_top": [
+    {
+      "doc": "Atlas Service Policy: Error code ERR-904 indicates database connection timeout.",
+      "rank": 1
+    },
+    {
+      "doc": "Atlas Service Policy: Error code ERR-905 indicates unauthorized access token.",
+      "rank": 2
+    },
+    {
+      "doc": "System Architecture: All microservices communicate using mTLS encryption protocol.",
+      "rank": 3
+    }
+  ],
+  "dense_chroma_top": [
+    {
+      "doc": "Atlas Service Policy: Error code ERR-904 indicates database connection timeout.",
+      "rank": 1
+    },
+    {
+      "doc": "Atlas Service Policy: Error code ERR-905 indicates unauthorized access token.",
+      "rank": 2
+    },
+    {
+      "doc": "Security Protocol: Incident response team can be reached at extension 4099.",
+      "rank": 3
+    }
+  ],
+  "hybrid_rrf_top": [
+    {
+      "doc": "Atlas Service Policy: Error code ERR-904 indicates database connection timeout.",
+      "rrf_score": 0.032787,
+      "rank": 1
+    },
+    {
+      "doc": "Atlas Service Policy: Error code ERR-905 indicates unauthorized access token.",
+      "rrf_score": 0.032258,
+      "rank": 2
+    },
+    {
+      "doc": "Security Protocol: Incident response team can be reached at extension 4099.",
+      "rrf_score": 0.015873,
+      "rank": 3
+    },
+    {
+      "doc": "System Architecture: All microservices communicate using mTLS encryption protocol.",
+      "rrf_score": 0.015873,
+      "rank": 4
+    }
+  ],
+  "latencies": {
+    "bm25_sec": 0.006,
+    "dense_sec": 5.38583,
+    "hybrid_fusion_sec": 0.0
+  }
+}

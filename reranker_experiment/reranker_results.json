@@ -1,0 +1,51 @@
+{
+  "query": "How can I unlock my account if I entered the wrong password three times?",
+  "stage1_vector_only": [
+    {
+      "doc": "If your account is locked due to 3 failed login attempts, contact IT Support at extension 5555 to unlock it.",
+      "rank": 1
+    },
+    {
+      "doc": "To reset your account password, navigate to Settings > Security and click 'Reset Password'. An email will be sent.",
+      "rank": 2
+    },
+    {
+      "doc": "Security best practices recommend changing your password every 90 days to prevent unauthorized access.",
+      "rank": 3
+    },
+    {
+      "doc": "Password policies require at least 12 characters, including uppercase, lowercase, numbers, and special symbols.",
+      "rank": 4
+    }
+  ],
+  "stage2_reranked": [
+    {
+      "doc": "If your account is locked due to 3 failed login attempts, contact IT Support at extension 5555 to unlock it.",
+      "stage1_rank": 1,
+      "stage2_rank": 1,
+      "score": 1.9062
+    },
+    {
+      "doc": "To reset your account password, navigate to Settings > Security and click 'Reset Password'. An email will be sent.",
+      "stage1_rank": 2,
+      "stage2_rank": 2,
+      "score": -4.2582
+    },
+    {
+      "doc": "Security best practices recommend changing your password every 90 days to prevent unauthorized access.",
+      "stage1_rank": 3,
+      "stage2_rank": 3,
+      "score": -6.9206
+    },
+    {
+      "doc": "Password policies require at least 12 characters, including uppercase, lowercase, numbers, and special symbols.",
+      "stage1_rank": 4,
+      "stage2_rank": 4,
+      "score": -9.0614
+    }
+  ],
+  "latencies": {
+    "stage1_retrieval_sec": 5.20716,
+    "stage2_rerank_sec": 0.26013
+  }
+}
